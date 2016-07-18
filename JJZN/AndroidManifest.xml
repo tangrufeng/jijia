@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jjzn.wifibox.xmly"
+    android:versionCode="16"
+    android:versionName="1.0.16" >
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+    <application
+        android:name="com.xhk.wifibox.XHKApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="3cf2a1ca84"/>
+        <!-- 是否开启错误日志统计，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_EXCEPTION_LOG"
+            android:value="true"/>
+        <meta-data
+            android:name="BaiduMobAd_SEND_STRATEGY"
+            android:value="APP_START"/>
+
+        <activity
+            android:name="com.xhk.wifibox.activity.ReadyActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.xhk.wifibox.activity.ConfigBoxActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xhk.wifibox.activity.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xhk.wifibox.activity.PlayerActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xhk.wifibox.activity.ScanActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xhk.wifibox.activity.PlayListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xhk.wifibox.activity.PlayListListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xhk.wifibox.activity.AlbumListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xhk.wifibox.activity.SearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xhk.wifibox.activity.xm.XMMainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xhk.wifibox.activity.xm.CollectListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xhk.wifibox.activity.xm.RankListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xhk.wifibox.activity.xm.RadioListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xhk.wifibox.activity.xm.ArtistListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xhk.wifibox.activity.ttfm.TTFMMainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xhk.wifibox.activity.ttfm.SubCategoryActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xhk.wifibox.activity.xmly.XMLYMainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xhk.wifibox.activity.xmly.XMLYTagsActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+
+</manifest>
